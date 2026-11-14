@@ -6,6 +6,8 @@ set(CMAKE_CXX_STANDARD 20)
 include_directories(SDL3/include)
 link_directories(SDL3/lib)
 
-add_executable(SDL3_Project_SelfContained main.cpp)
+add_executable(SDL3_Project_SelfContained main.cpp
+        rectangle.h
+        rectangle.cpp)
 
 target_link_libraries(SDL3_Project_SelfContained mingw32 SDL3)
